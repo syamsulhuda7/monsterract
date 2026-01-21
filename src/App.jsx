@@ -173,7 +173,7 @@ export default function App() {
 
         {/* ================= ABOUT ================= */}
         <Section>
-          <div className="grid md:grid-cols-12 gap-12 items-start">
+          <div className="px-10 md:px-0 grid md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-5">
               <h2 className="section-title">About Monsterract</h2>
             </div>
@@ -191,9 +191,9 @@ export default function App() {
 
         {/* ================= SERVICES ================= */}
         <Section>
-          <h2 className="section-title">What We Do</h2>
+          <h2 className="section-title px-10 md:px-0">What We Do</h2>
 
-          <div className="mt-16 space-y-10">
+          <div className="mt-16 space-y-10 px-10 md:px-0">
             {[
               "Social Media Management",
               "Content & Campaign Strategy",
@@ -215,9 +215,9 @@ export default function App() {
 
         {/* ================= PORTFOLIO ================= */}
         <Section>
-          <h2 className="section-title">Selected Work</h2>
+          <h2 className="section-title px-10 md:px-0">Selected Work</h2>
 
-          <div className="grid md:grid-cols-3 gap-12 mt-16">
+          <div className="grid md:grid-cols-3 gap-12 mt-16 px-10 md:px-0">
             {[1, 2, 3].map((i) => (
               <motion.div
                 key={i}
@@ -289,7 +289,7 @@ function Metrics() {
   }, [inView]);
 
   return (
-    <div ref={ref} className="about-metrics">
+    <div ref={ref} className="about-metrics gap-10 md:gap-18">
       <Metric start={start} value={120} suffix="+" label="Brands" />
       <Metric start={start} value={98} suffix="%" label="Retention" />
       <Metric start={start} value={4.9} decimals={1} label="Client Rating" />
